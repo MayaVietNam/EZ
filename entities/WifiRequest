@@ -1,0 +1,117 @@
+{
+  "name": "WifiRequest",
+  "type": "object",
+  "properties": {
+    "partner": {
+      "type": "string",
+      "enum": [
+        "TOYOTA",
+        "YAMAHA",
+        "MITSUBISHI",
+        "SUMITOMO",
+        "HIS"
+      ],
+      "description": "Th\u01b0\u01a1ng hi\u1ec7u \u0111\u1ed1i t\u00e1c"
+    },
+    "requester_name": {
+      "type": "string",
+      "description": "H\u1ecd t\u00ean ng\u01b0\u1eddi \u0111\u1eb7t \u0111\u01a1n"
+    },
+    "requester_email": {
+      "type": "string",
+      "description": "Email ng\u01b0\u1eddi \u0111\u1eb7t \u0111\u01a1n"
+    },
+    "requester_phone": {
+      "type": "string",
+      "description": "S\u1ed1 \u0111i\u1ec7n tho\u1ea1i"
+    },
+    "company": {
+      "type": "string",
+      "description": "C\u00f4ng ty"
+    },
+    "department": {
+      "type": "string",
+      "description": "Khu v\u1ef1c / ph\u00f2ng ban"
+    },
+    "tax_code": {
+      "type": "string",
+      "description": "M\u00e3 s\u1ed1 thu\u1ebf"
+    },
+    "order_number": {
+      "type": "string",
+      "description": "S\u1ed1 th\u1ee9 t\u1ef1 \u0111\u01a1n"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "T\u00ean ng\u01b0\u1eddi d\u00f9ng thi\u1ebft b\u1ecb"
+    },
+    "imei": {
+      "type": "string",
+      "description": "M\u00e3 IMEI / t\u00ean thi\u1ebft b\u1ecb"
+    },
+    "from_date": {
+      "type": "string",
+      "description": "T\u1eeb ng\u00e0y s\u1eed d\u1ee5ng"
+    },
+    "to_date": {
+      "type": "string",
+      "description": "\u0110\u1ebfn ng\u00e0y s\u1eed d\u1ee5ng"
+    },
+    "usage_days": {
+      "type": "number",
+      "description": "S\u1ed1 ng\u00e0y s\u1eed d\u1ee5ng"
+    },
+    "country": {
+      "type": "string",
+      "description": "Qu\u1ed1c gia s\u1eed d\u1ee5ng"
+    },
+    "data_package": {
+      "type": "string",
+      "description": "G\u00f3i data"
+    },
+    "budget_code": {
+      "type": "string",
+      "description": "Budget Code"
+    },
+    "unit_price": {
+      "type": "string",
+      "description": "\u0110\u01a1n gi\u00e1/ng\u00e0y"
+    },
+    "subtotal": {
+      "type": "string",
+      "description": "Th\u00e0nh ti\u1ec1n (tr\u01b0\u1edbc VAT)"
+    },
+    "vat": {
+      "type": "string",
+      "description": "VAT (10%)"
+    },
+    "total": {
+      "type": "string",
+      "description": "T\u1ed5ng c\u1ed9ng"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending",
+      "description": "Tr\u1ea1ng th\u00e1i \u0111\u01a1n"
+    },
+    "sheet_row_id": {
+      "type": "string",
+      "description": "ID d\u00f2ng t\u1eeb Google Sheet \u0111\u1ec3 tr\u00e1nh tr\u00f9ng"
+    },
+    "is_new": {
+      "type": "boolean",
+      "default": true,
+      "description": "\u0110\u00e1nh d\u1ea5u ch\u01b0a xem \u0111\u1ec3 hi\u1ec7n badge"
+    }
+  },
+  "required": [
+    "partner",
+    "requester_name",
+    "status"
+  ]
+}
