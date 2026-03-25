@@ -1,0 +1,31 @@
+{
+  "name": "MonthlyStatement",
+  "type": "object",
+  "properties": {
+    "partner": {
+      "type": "string",
+      "description": "\u0110\u1ed1i t\u00e1c"
+    },
+    "month_key": {
+      "type": "string",
+      "description": "Th\u00e1ng \u0111\u1ecbnh d\u1ea1ng YYYY-MM"
+    },
+    "sent": {
+      "type": "boolean",
+      "default": false,
+      "description": "\u0110\u00e3 g\u1eedi b\u1ea3ng k\u00ea hay ch\u01b0a"
+    },
+    "sent_date": {
+      "type": "string",
+      "description": "Ng\u00e0y g\u1eedi b\u1ea3ng k\u00ea"
+    },
+    "note": {
+      "type": "string",
+      "description": "Ghi ch\u00fa"
+    }
+  },
+  "required": [
+    "partner",
+    "month_key"
+  ]
+}
